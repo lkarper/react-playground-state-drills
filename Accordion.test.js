@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import renderer from 'react-test-renderer';
 import Accordion from './Accordion';
 import { shallow } from 'enzyme';
 import toJSON from 'enzyme-to-json';
@@ -28,17 +27,13 @@ describe('Accordion component', () => {
     });
 
     it('renders an empty <li /> when the sections prop is not supplied', () => {
-        const tree = renderer
-            .create(<Accordion />)
-            .toJSON();
-            expect(tree).toMatchSnapshot();
+        const wrapper = shallow(<Accordion />);
+        expect(toJSON(wrapper)).toMatchSnapshot();
     });
 
     it('renders no sections as active by default', () => {
-        const tree = renderer
-            .create(<Accordion sections={sections} />)
-            .toJSON();
-            expect(tree).toMatchSnapshot();
+        const wrapper = shallow(<Accordion sections={sections}/>);
+        expect(toJSON(wrapper)).toMatchSnapshot();
     });
 
     it('opens a clicked section', () => {
