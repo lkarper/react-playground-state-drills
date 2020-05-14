@@ -28,10 +28,22 @@ class RouletteGun extends React.Component {
         clearInterval(this.interval);
     }
 
+    fetchMessage = () => {
+        if (this.state.spinningTheChamber) {
+            return 'Spinning the chamber and pulling the trigger';
+        } else if (this.state.chamber === this.props.bulletInChamber) {
+            return 'Bang!!!!';
+        } else if (this.state.chamber) {
+            return "You're safe";
+        }
+        
+        return '';
+    }
+
     render() {
         return (
             <div>
-                <p>{this.state.spinningTheChamber ? 'spinning the chamber and pulling the trigger' : this.state.chamber ? this.state.chamber === this.props.bulletInChamber ? 'Bang!!!!' : "you're safe" : ''}</p>
+                <p>{this.fetchMessage()}</p>
                 <button onClick={this.handleSpin}>Pull the trigger!</button>
             </div>
         )
