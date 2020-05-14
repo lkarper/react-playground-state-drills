@@ -1,0 +1,150 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion component closes a section that is clicked twice 1`] = `
+<ul>
+  <li
+    key="0"
+  >
+    <button
+      className="button0"
+      onClick={[Function]}
+    >
+      Section 1
+    </button>
+  </li>
+  <li
+    key="1"
+  >
+    <button
+      className="button1"
+      onClick={[Function]}
+    >
+      Section 2
+    </button>
+  </li>
+  <li
+    key="2"
+  >
+    <button
+      className="button2"
+      onClick={[Function]}
+    >
+      Section 3
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Accordion component only opens one section at a time 1`] = `
+<ul>
+  <li
+    key="0"
+  >
+    <button
+      className="button0"
+      onClick={[Function]}
+    >
+      Section 1
+    </button>
+  </li>
+  <li
+    key="1"
+  >
+    <button
+      className="button1"
+      onClick={[Function]}
+    >
+      Section 2
+    </button>
+  </li>
+  <li
+    key="2"
+  >
+    <button
+      className="button2"
+      onClick={[Function]}
+    >
+      Section 3
+    </button>
+    <p>
+      Animi amet cumque sint cupiditate officia ab voluptatibus libero optio et?
+    </p>
+  </li>
+</ul>
+`;
+
+exports[`Accordion component opens a clicked section 1`] = `
+<ul>
+  <li
+    key="0"
+  >
+    <button
+      className="button0"
+      onClick={[Function]}
+    >
+      Section 1
+    </button>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+  </li>
+  <li
+    key="1"
+  >
+    <button
+      className="button1"
+      onClick={[Function]}
+    >
+      Section 2
+    </button>
+  </li>
+  <li
+    key="2"
+  >
+    <button
+      className="button2"
+      onClick={[Function]}
+    >
+      Section 3
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Accordion component renders an empty <li /> when the sections prop is not supplied 1`] = `
+<ul>
+  <li />
+</ul>
+`;
+
+exports[`Accordion component renders no sections as active by default 1`] = `
+<ul>
+  <li>
+    <button
+      className="button0"
+      onClick={[Function]}
+    >
+      Section 1
+    </button>
+    
+  </li>
+  <li>
+    <button
+      className="button1"
+      onClick={[Function]}
+    >
+      Section 2
+    </button>
+    
+  </li>
+  <li>
+    <button
+      className="button2"
+      onClick={[Function]}
+    >
+      Section 3
+    </button>
+    
+  </li>
+</ul>
+`;

@@ -1,0 +1,21 @@
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background-color: white;
+    font-size: 20px;
+}
+
+button:hover, button:focus {
+    text-decoration: underline;
+}
+
+button:focus {
+    color: red;
+}
+
+p {
+    font-weight: bold;
+}
